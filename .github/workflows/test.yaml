@@ -6,7 +6,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    environment: test
+    environment: 
+      name: test
     steps:
       - uses: actions/checkout@v2
       - name: commit manifests and push
